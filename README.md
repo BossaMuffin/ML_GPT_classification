@@ -23,16 +23,16 @@ Shell CLI :
 `echo 'OPENAI_API_KEY=Y0uR_OP3N@i_@P1_K3Y' > .env`   
 `source .env`   
 Script Python :   
-
-
-    import os
-    from dotenv import load_dotenv
-    load_dotenv()
-    openai.api_key = os.environ.get('OPENAI_API_KEY')
+`import os`
+`from dotenv import load_dotenv`
+`load_dotenv()`
+`openai.api_key = os.environ.get('OPENAI_API_KEY')`
 
 2. Depuis un export manuel
-Shell Cli :     
-`export OPENAI_API_KEY="Y0uR_OP3N@i_@P1_K3Y"`
+
+Shell CLI :     
+`export OPENAI_API_KEY="Y0uR_OP3N@i_@P1_K3Y"`   
+
 Script Python :   
 `openai.api_key = os.getenv('OPENAI_API_KEY')`   
 
